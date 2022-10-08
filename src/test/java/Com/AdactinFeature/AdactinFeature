@@ -1,0 +1,40 @@
+Feature: Hotel Booking in Adactin Application
+
+Scenario: User Login In Web Application
+Given user Launch In Adactin  Application
+When user Enter The User Name In User Name Field
+And  user Enter The Password In User Password Field
+Then user click The Login Button And It Navigates To Search Hotel Page.
+
+Scenario: User Search The Hotel in Search Hotel Page
+When User Click The Location drop_down button And User Select the Location Field
+And User Click The Hotel drop_down Button And User Select The Hotel Field
+And User Click The Room Type drop_down Button And User Select The Room Type Field
+And User Click The Number of Rooms drop_dowm Button And User Select The Number of Rooms Field
+And User Enter The Check In Date Box In Check In Date Field
+And User Enter The Check out Date Box In Check Out Date Field
+And User Click The Adults Per Room drop_down Button And User select The Adults Field
+And user Click The Children per Room drop_down Button And User Select The Children per Room
+Then User Click The Search Button And It Navigates To Select Hotel Page
+
+Scenario: User Can Able Select The Hotel in Select Hotel Page
+When User Click The Select Radio Button In Select Field Click the Button
+And User Click The Continue Button And It Navigates To Book  A Hotel Page
+
+Scenario: User can Able To Confirm our details In Book A Hotel Page
+When User Enter The First Name In First Name Field
+And User Enter The Last Name In Last Name Field
+And User Enter The Billing Addrss In Billing Address Field
+And User Enter The Credit Card No In Credit Card No Field
+And User Click The Credit Card Type drop_down Button And Credit Card Type Field
+And USer Click The Select Months drop down button And User Select The Months Field
+And User Click The Select Year drop down button And User Select The Year Field
+And User Enter The CVV Number Box In CVV Number Field
+Then User Click The Book Now And It Navigates To Booking Confirmation Page
+
+Scenario: User Can be able To Check The Details In  Booking Confirmation Page
+Then User Click The LogOut Button And It Navigates To Logout Processing Page
+
+Scenario: User Can be Able see The Logout Page.
+Then User Click the Login Again Button And It Naviagtes To LogIn Page
+
